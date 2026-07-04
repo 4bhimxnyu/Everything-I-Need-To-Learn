@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>QuerySelectorAll</h1>
+    <h2>the querSelectorAll function is demonstrated here</h2>
+
+    <p>here we are going to change the property of all p where parent is the div </p>
+    <br>
+    <div class="demo">
+        <h1>First Demo Div</h1>
+        <p> this is first div paragraph</p>
+    </div>
+    <div class="demo">
+        <h1>Second Demo Div</h1>
+        <p> this is second div paragraph</p>
+    </div>
+    </div>
+    <div class="demo">
+        <h1>Third Demo Div</h1>
+        <p> this is third div paragraph</p>
+    </div>
+
+    <script>
+        const divPara = document.querySelectorAll("div > p");
+        for(let i = 0 ; i < divPara.length; i++){
+            divPara[i].style.backgroundColor = "red";
+        }
+    </script>
+</body>
+</html>
