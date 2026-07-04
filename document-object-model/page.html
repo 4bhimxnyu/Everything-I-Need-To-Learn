@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Example page</h1>
+    </div>
+    <br>
+    <div>
+        <h1>Non Example page</h1>
+    </div>
+
+    <script>
+        // Your JavaScript code here
+
+        const Pages = document.querySelectorAll("div");
+        for(let i = 0 ; i< Pages.length; i++){
+            Pages[i].style.backgroundColor = "#222";
+            Pages[i].style.color = "white";
+            Pages[i].style.fontFamily = "Arial, sans-serif";
+            Pages[i].style.justifyContent = "center";
+            Pages[i].style.alignItems = "center";
+            Pages[i].style.display = "flex";
+            Pages[i].style.padding = "100px";
+        }
+
+    </script>
+</body>
+</html>
