@@ -15,13 +15,18 @@
 </head>
 <body>
     <h1>Dark Mode Demo</h1>
+    <div id="modes"></div>
 
     <button>Toggle Theme</button>
 
     <script>
+        const names = document.createElement("h2");
+        
         const button = document.querySelector("button");
         const body = document.querySelector("body");
         button.addEventListener("click", () => {
+            names.innerHTML = body.classList.contains("dark") ? "Light Mode" : "Dark Mode";
+            document.getElementById("modes").appendChild(names);
             body.classList.toggle("dark");
         })
     </script>
